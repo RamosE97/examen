@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Configuracion">
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LblConfiguracion"/>
+
+      <EditText
+          android:id="@+id/txtNickname"
+          android:drawablePadding="2dp"
+          android:drawableLeft="@drawable/ic_person"
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:hint="@string/IngresaNick"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SeleccionaDificultad"/>
+   <RadioGroup
+       android:layout_gravity="center"
+       android:id="@+id/rdG"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <RadioButton
+           android:id="@+id/rbFacil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Fácil"/>
+       <RadioButton
+           android:id="@+id/rbMedio"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Medio"/>
+       <RadioButton
+           android:id="@+id/rbDificil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Difícil"/>
+   </RadioGroup>
+    <TextView
+        android:textColor="#000"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un tiempo"/>
+    <RadioGroup
+        android:layout_gravity="center"
+        android:id="@+id/rdTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1Minuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Minuto"/>
+        <RadioButton
+            android:id="@+id/rb5Minuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Minutos"/>
+        <RadioButton
+            android:id="@+id/rb10Minuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 minutos"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnCancelar"
+            android:text="Cancelar"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnAceptar"
+            android:text="Guardar"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

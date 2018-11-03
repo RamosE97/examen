@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Juego">
+    <TextView
+        android:id="@+id/lblDificultadElegida"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegiste el modo Fácil"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Te consideras capaz de adivinar?"/>
+    <TextView
+        android:id="@+id/lblPista"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pista: Me encuentro del 1 al 100"/>
+
+        <EditText
+            android:id="@+id/txtNumeroElegido"
+            android:inputType="number"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@drawable/ic_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa un numero"/>
+    <TextView
+        android:id="@+id/lblNick"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Estás seguro?"/>
+    <TextView
+        android:id="@+id/lblIntentos"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus intentos son: "/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/btnProbarSuerte"
+        android:text="Probar suerte"
+        android:background="@drawable/shape"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/lblContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porcentaje de tiempo:"
+        android:textSize="28dp" />
+    <ProgressBar
+        android:id="@+id/Progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:max="100"
+        android:layout_height="wrap_content"
+        android:progress="0" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">exma2GR15i04001</string>
+    <string name="Bienvenido">Selecciona una opción</string>
+    <string name="LblConfiguracion">¿Estás listo para jugar?, completa los datos</string>
+    <string name="Jugador">Jugador:</string>
+    <string name="IngresaNick">Ingresa tu nick</string>
+    <string name="SeleccionaDificultad">Selecciona una dificultad</string>
+    <string name="IngreseNick">Ingrese un nick</string>
+</resources>
